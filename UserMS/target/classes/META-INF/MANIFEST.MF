@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Ramya
+Build-Jdk: 16.0.1
+Implementation-Title: UserMS
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.oms
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/UserMS
+Created-By: Maven Integration for Eclipse
+

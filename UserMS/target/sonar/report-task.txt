@@ -1,0 +1,7 @@
+organization=ramyakovida
+projectKey=ramyakovida_reskill-OMSproject
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.21322
+dashboardUrl=https://sonarcloud.io/dashboard?id=ramyakovida_reskill-OMSproject
+ceTaskId=AXpRi-LAzlUuVvFVM1aO
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXpRi-LAzlUuVvFVM1aO
