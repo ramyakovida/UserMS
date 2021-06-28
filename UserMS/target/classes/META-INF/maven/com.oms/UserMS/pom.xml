@@ -15,7 +15,7 @@
 	<description>User micro-service Springboot</description>
 	<properties>
 		<java.version>11</java.version>
-		<sonar.projectKey>ramyakovida_reskill-OMSproject</sonar.projectKey>
+		<sonar.projectKey>ramyakovida_UserMS</sonar.projectKey>
 		<sonar.organization>ramyakovida</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
