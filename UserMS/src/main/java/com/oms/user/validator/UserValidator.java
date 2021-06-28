@@ -44,7 +44,7 @@ public class UserValidator {
 	public static boolean validateName(String name)
 	{
 		
-		String regex = "[A-Za-z]+([ ][A-Za-z]+)*";
+		String regex = "[A-Za-z]+([\\s][A-Za-z]+)*";
 		
 		if(name.matches(regex))
 			return true;
