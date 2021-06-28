@@ -123,7 +123,9 @@ public class UserAPI {
 		URI productUri = instance.getUri();
 		
 		ProductDTO product = new RestTemplate().getForObject(productUri+"/prodMS/getById/"+prodId, ProductDTO.class);
-		
+		if(product.getProdId()==null||product.getProdId().equals(0)) {
+            return new ResponseEntity<>("No product details available",HttpStatus.NOT_FOUND);
+        }
 		String msg = userServiceNew.wishlistService(product.getProdId(), buyerId);
 		
 		return new ResponseEntity<>(msg,HttpStatus.ACCEPTED);
@@ -151,6 +153,9 @@ public class UserAPI {
 		
 		 
 		ProductDTO product = new RestTemplate().getForObject(productUri+"/prodMS/getById/"+prodId, ProductDTO.class);
+		if(product.getProdId()==null||product.getProdId().equals(0)) {
+            return new ResponseEntity<>("No product details available",HttpStatus.NOT_FOUND);
+        }
 		System.out.println(product);
 		System.out.println(product instanceof ProductDTO);
 		String msg = userServiceNew.cartService(product.getProdId(), buyerId, quantity);
